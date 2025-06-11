@@ -4,7 +4,7 @@ class FileHandling {
         String filename="textfilename/path";
         try(BufferedReader br=new BufferedReader(new FileReader(filename))){
             String Line;
-            if(Line=br.readLine() !=null) {
+            if((Line=br.readLine()) !=null) {
             System.out.println(Line);    
             }
         }
