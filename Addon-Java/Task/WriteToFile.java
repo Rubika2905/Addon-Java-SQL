@@ -1,22 +1,15 @@
-package task;
 import java.io.FileWriter;
 import java.io.IOException;
-
-public class WriteToFile {
-
-	public static void main(String[] args) {
-		try {
-			FileWriter Writer = new FileWriter("file.txt");
-			Writer.write("hiii student");
-			Writer.write("heloo world");
-			Writer.write("welcome");
-			Writer.close();
-			System.out.println("sucessfully");
-			}
-		catch(Exception e) {
-			System.out.println("An error occurs");
-			e.printStackTrace();
-		}
-	}
-
+public class WriteToFile{
+    public static void main(String[] args) {
+        String filename="";
+        try(BufferedWriter br=new BufferedWriter(new FileWriter(filename))){
+        String = mywriter;
+         if((mywriter = br.newLine()) !=null){
+                 
+             System.out.println("Successfully write to the file");
+            }
+            }catch(Exception e){
+             System.out.println("Filenotfound");
+    }}
 }
