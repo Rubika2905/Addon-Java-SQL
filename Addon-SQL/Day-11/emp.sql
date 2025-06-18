@@ -359,3 +359,15 @@ mysql> select* from emp left outer join dept on emp.deptno=dept.deptno;
 |  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
 +-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
 14 rows in set (0.00 sec)
+
+mysql> select  e1.ename emp_name,e2.sal mgr_sal from emp e1,emp e2 where e1.mgr=e2.empno and e2. sal>2300 and e1.sal>2300;
++----------+---------+
+| emp_name | mgr_sal |
++----------+---------+
+| FORD     | 2975.00 |
+| SCOTT    | 2975.00 |
+| CLARK    | 5000.00 |
+| BLAKE    | 5000.00 |
+| JONES    | 5000.00 |
++----------+---------+
+5 rows in set (0.00 sec)
