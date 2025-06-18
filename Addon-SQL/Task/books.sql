@@ -42,3 +42,26 @@ mysql> select* from books;
 |    8 | Maths       |
 +------+-------------+
 8 rows in set (0.00 sec)
+
+mysql> select Booksname
+    -> from books
+    -> where Booksname like 'c%';
++--------------+
+| Booksname    |
++--------------+
+| C            |
+| C++          |
++--------------+
+2 rows in set (0.03 sec)
+mysql> select Booksname
+    -> from books
+    -> where Booksname like '%y';
++-----------------------+
+| Booksname             |
++-----------------------+
+| Acountancy            |
++-----------------------+
+1 row in set (0.00 sec)
+
+
+
