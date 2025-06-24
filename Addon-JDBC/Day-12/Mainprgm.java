@@ -21,7 +21,7 @@ class Student {
 class StudentDBManager {
     String url = "jdbc:mysql://localhost:3306/jdbc";
     String user = "root";
-    String password = "karthi@kg";
+    String password = "kgcas@123";
     public void insertStudent(Student s) throws Exception {
         String query = "INSERT INTO Students (studrollno, studname, studemail, studphno, studdept, course) VALUES (?, ?, ?, ?, ?, ?)";
         try (Connection conn = DriverManager.getConnection(url, user, password);
